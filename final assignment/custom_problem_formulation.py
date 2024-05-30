@@ -272,6 +272,7 @@ def get_model_for_problem_formulation(problem_formulation_id):
         outcomes = []
 
         for dike in function.dikelist:
+            print(dike)
             cost_variables = []
             for e in ["Expected Annual Damage", "Dike Investment Costs"]:
                 cost_variables.append(f"{dike}_{e}")
