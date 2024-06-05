@@ -146,7 +146,7 @@ def get_model_for_problem_formulation(problem_formulation_id):
 
                 outcomes.append(
                     ScalarOutcome(
-                        f"{dike} External Costs",
+                        f"{dike}_External Costs",
                         variable_name=[var for var in external_cost_variables],
                         function=sum_over,
                         kind=direction,
