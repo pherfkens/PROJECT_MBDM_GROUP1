@@ -155,6 +155,15 @@ def get_model_for_problem_formulation(problem_formulation_id):
 
                 outcomes.append(
                     ScalarOutcome(
+                        f"{dike}RfR Costs",
+                        variable_name=f"{dike}RfR Total Costs",
+                        function=sum_over,
+                        kind=direction,
+                    )   
+                )
+
+                outcomes.append(
+                    ScalarOutcome(
                         f"{dike}_Expected Number of Deaths",
                         variable_name=f"{dike}_Expected Number of Deaths",
                         function=sum_over,
