@@ -34,7 +34,7 @@ def sum_over_time(*args):
     return summed
 
 
-def get_model_for_problem_formulation(problem_formulation_id):
+def get_model_for_problem_formulation():
     """Convenience function to prepare DikeNetwork in a way it can be input in the EMA-workbench.
     Specify uncertainties, levers, and outcomes of interest.
 
@@ -134,50 +134,54 @@ def get_model_for_problem_formulation(problem_formulation_id):
     # Outcomes are all costs, thus they have to minimized:
     direction = ScalarOutcome.MINIMIZE
 
-    # Disaggregate over locations:
-    if problem_formulation_id == 3:
-        outcomes = []
+    outcomes = []
 
-        for dike in function.dikelist:
-            if dike in ['A.1', 'A.2']:
-                external_cost_variables = []
-                for e in ["Expected Evacuation Costs", "Dike Investment Costs"]:
-                    external_cost_variables.append(f"{dike}_{e}")
+    for dike in function.dikelist:
+        if dike in ['A.1', 'A.2']:
+            external_cost_variables = []
+            for e in ["Expected Evacuation Costs", "Dike Investment Costs"]:
+                external_cost_variables.append(f"{dike}_{e}")
 
-                outcomes.append(
-                    ScalarOutcome(
-                        f"{dike}_External Costs",
-                        variable_name=[var for var in external_cost_variables],
-                        function=sum_over,
-                        kind=direction,
-                    )
+            outcomes.append(
+                ScalarOutcome(
+                    f"{dike}_External Costs",
+                    variable_name=[var for var in external_cost_variables],
+                    function=sum_over,
+                    kind=direction,
                 )
+            )
 
-                outcomes.append(
-                    ScalarOutcome(
-                        f"{dike}_Expected Number of Deaths",
-                        variable_name=f"{dike}_Expected Number of Deaths",
-                        function=sum_over,
-                        kind=direction,
-                    )
+            outcomes.append(
+                ScalarOutcome(
+                    f"{dike}_RfR Costs",
+                    variable_name=f"{dike}_RfR Total Costs",
+                    function=sum_over,
+                    kind=direction,
+                )   
+            )
+
+            outcomes.append(
+                ScalarOutcome(
+                    f"{dike}_Expected Number of Deaths",
+                    variable_name=f"{dike}_Expected Number of Deaths",
+                    function=sum_over,
+                    kind=direction,
                 )
+            )
 
-                outcomes.append(
-                    ScalarOutcome(
-                        f"{dike}_Expected Annual Damage",
-                        variable_name=f"{dike}_Expected Annual Damage",
-                        function=sum_over,
-                        kind=direction,
-                    )
+            outcomes.append(
+                ScalarOutcome(
+                    f"{dike}_Expected Annual Damage",
+                    variable_name=f"{dike}_Expected Annual Damage",
+                    function=sum_over,
+                    kind=direction,
                 )
+            )
 
-        dike_model.outcomes = outcomes
-
-    else:
-        raise TypeError("unknown identifier")
+    dike_model.outcomes = outcomes
 
     return dike_model, function.planning_steps
 
 
 if __name__ == "__main__":
-    get_model_for_problem_formulation(3)
+    get_model_for_problem_formulation()
