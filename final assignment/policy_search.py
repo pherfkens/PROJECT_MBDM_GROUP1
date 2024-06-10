@@ -15,7 +15,7 @@ def load_scenarios(filepath):
     ]
     return scenarios
 
-def optimize_scenarios(model, scenarios, nfe, epsilon, seeds=5):
+def optimize_scenarios(model, scenarios, nfe, epsilon, seeds=4):
     results = []
     convergences = []
     with MultiprocessingEvaluator(model) as evaluator:
@@ -44,10 +44,9 @@ def optimize_scenarios(model, scenarios, nfe, epsilon, seeds=5):
     return results, convergences
 
 def save_results(result, convergence, scenario_name, seed):
-    filename_start = './results/Policy_search'
-    filename_end = f'_scen{scenario_name}_seed{seed}.csv'
-    result.to_csv(filename_start + 'results' + filename_end)
-    convergence.to_csv(filename_start + 'convergence' + filename_end)
+    filename = f'./results/Policy_search_scen{scenario_name}_seed{seed}'
+    result.to_csv(filename + 'results.csv')
+    convergence.to_csv(filename + 'convergence.csv')
 
 if __name__ == "__main__":
     ema_logging.log_to_stderr(ema_logging.INFO)
