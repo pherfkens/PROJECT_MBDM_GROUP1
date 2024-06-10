@@ -44,8 +44,8 @@ def optimize_scenarios(model, scenarios, nfe, epsilon, seeds=5):
     return results, convergences
 
 def save_results(result, convergence, scenario_name, seed):
-    filename_start = './results/Policy_search'
-    filename_end = f'_scen{scenario_name}_seed{seed}.csv'
+    # filename_start = './results/Policy_search'
+    # filename_end = f'_scen{scenario_name}_seed{seed}.csv'
     result.to_csv(filename_start + 'results' + filename_end)
     convergence.to_csv(filename_start + 'convergence' + filename_end)
 
