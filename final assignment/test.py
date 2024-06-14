@@ -79,7 +79,10 @@ for scenario in scenario_ids:
 
 # Calculate and save convergence metrics
 convergence_metrics = {}
-for scenario in scenario_ids:
+# for scenario in scenario_ids:
+for scenario in [39833]:
+    # if scenario == 39833:
+    #     continue
     pols = policy_dict[scenario]
     hv = HypervolumeMetric(pols, problem)
     gd = GenerationalDistanceMetric(pols, problem, d=1)
