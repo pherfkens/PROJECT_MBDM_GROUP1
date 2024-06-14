@@ -1,13 +1,4 @@
 # import all modules, some might not be necessary (DIE NOG VERWIJDEREN)
-from ema_workbench import (
-    Model,
-    MultiprocessingEvaluator,
-    ScalarOutcome,
-    IntegerParameter,
-    optimize,
-    Scenario,
-    Constraint,
-)
 from ema_workbench.em_framework.optimization import EpsilonProgress, epsilon_nondominated
 from ema_workbench.util import ema_logging
 
