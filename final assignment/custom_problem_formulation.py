@@ -137,14 +137,14 @@ def get_model_for_problem_formulation():
     outcomes = []
 
     for dike in function.dikelist:
-        if dike in ['A.1', 'A.2']:
+        if dike in ['A.1', 'A.2']: # Changed the original problem formulation to exclude dike rings A.3, A.4, and A.5
             external_cost_variables = []
             for e in ["Expected Evacuation Costs", "Dike Investment Costs"]:
                 external_cost_variables.append(f"{dike}_{e}")
 
             outcomes.append(
                 ScalarOutcome(
-                    f"{dike}_External Costs",
+                    f"{dike}_External Costs", # Made our own outcome 'External Costs' which is the sum of the Expected Evacuation Costs and Dike Investment Costs
                     variable_name=[var for var in external_cost_variables],
                     function=sum_over,
                     kind=direction,
@@ -153,7 +153,7 @@ def get_model_for_problem_formulation():
 
             outcomes.append(
                 ScalarOutcome(
-                    f"{dike}_RfR Costs",
+                    f"{dike}_RfR Costs", # We wanted to measure the RfR Costs per dike ring. However, this was not possible due to the way the RfR Costs are measured, however we only found out later and couldn't rerun the results so this formulation was used for the base case generation. 
                     variable_name=f"{dike}_RfR Total Costs",
                     function=sum_over,
                     kind=direction,

@@ -136,6 +136,8 @@ def get_model_for_problem_formulation():
 
     outcomes = []
 
+    # This problem formulation is without RfR costs. This was necessary since the other problem formulations was giving issues with calculating the convergence
+    # metrics, due to RfR Costs not being correctly measured. The problem formulation is the same as the original problem formulation, but without the RfR costs.
     for dike in function.dikelist:
         if dike in ['A.1', 'A.2']:
             external_cost_variables = []
