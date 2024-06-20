@@ -153,9 +153,9 @@ def get_model_for_problem_formulation():
 
             outcomes.append(
                 ScalarOutcome(
-                    f"{dike}_RfR Costs", # We wanted to measure the RfR Costs per dike ring. However, this was not possible due to the way the RfR Costs are measured, however we only found out later and couldn't rerun the results so this formulation was used for the base case generation. 
-                    variable_name=f"{dike}_RfR Total Costs",
-                    function=sum_over,
+                    f"{dike}_RfR Costs",                     # We wanted to measure the RfR Costs per dike ring. However, this was not possible due to the way the RfR Costs are 
+                    variable_name=f"{dike}_RfR Total Costs", # measured, however we only found out later and couldn't rerun the results so this formulation was used for the 
+                    function=sum_over,                       # base case generation. This will be explained more in depth at the relevant parts of the code and notebooks.
                     kind=direction,
                 )   
             )
