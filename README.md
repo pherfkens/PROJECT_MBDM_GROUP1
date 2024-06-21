@@ -37,7 +37,8 @@ This directory has the following structure:
 │   ├── funs_dikes.py                             
 │   ├── funs_generate_network.py                   
 │   ├── funs_hydrostat.py                          
-│   ├── policy_search.py                       
+│   ├── policy_search.py    
+│   ├── problem_formulation.py                        
 │   ├── README.md                                 
 │   ├── robustness_testing.ipynb                   
 │   ├── scenario_discovery_prim.ipynb               
