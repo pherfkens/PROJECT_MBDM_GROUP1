@@ -1,6 +1,9 @@
 # Outline of directory
+
 The project Room for the River for the course EPA141A has primarly been done in this directory. This directory consists of the following files:
 
+
+## 
 Main files inspected to understand the model are [dike_model_function.py](dike_model_function.py), [problem_formulation.py](problem_formulation.py) and [dike_model_simulation.py](dike_model_simulation.py).  
 The problem_formulation was used to create [custom_problem_formulation_no_RFR.py](custom_problem_formulation_no_RFR.py), which is a problem formulation for the model, but edited specifically for our problem. 
 
