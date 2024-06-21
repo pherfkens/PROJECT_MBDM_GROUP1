@@ -28,31 +28,25 @@ A project as part of the course EPA141A Model Based Decision Making, conducted b
 │   ├── results/                                    # Directory to store results like csv's, pickle's or tar.gz  
 │   ├── __init__.py                                 # Untouched  
 │   ├── base_case.ipynb                             # Created  
-│   ├── custom_problem_formulation_no_RfR.py        # Edited NAAM VERANDEREN ?  
-│   ├── custom_problem_formulation.py               # NOG VERWIJDEREN  
+│   ├── custom_problem_formulation_no_RfR.py        # Edited
+│   ├── custom_problem_formulation.py               # Edited
 │   ├── dike_model_function.py                      # Untouched  
 │   ├── dike_model_optimization.py                  # Untouched  
 │   ├── dike_model_simulation.py                    # Untouched  
 │   ├── directed_search.ipynb                       # Created  
-│   ├── powerpoint                                  # NOG VERWIJDEREN  
 │   ├── Feature_Scoring_&_Dim_Stacking.ipynb        # Created  
 │   ├── funs_dikes.py                               # Untouched  
 │   ├── funs_generate_network.py                    # Untouched  
 │   ├── funs_hydrostat.py                           # Untouched  
-│   ├── policy_search.py                            # Untouched VERWIJDERN ?  
-│   ├── Problem Formulations.ipynb                  # VERWIJDEREN ?  
-│   ├── problem_formulation.py                      # VERWIJDEREN ?  
-│   ├── readme                                      # VERWIJDEREN  
-│   ├── foto                                        # VERWIJDEREN   
-│   ├── foto                                        # VERWIJDEREN   
+│   ├── policy_search.py                            # Created
+│   ├── README.md                                   # Edited  
 │   ├── robustness_testing.ipynb                    # Created  
 │   ├── scenario_discovery_prim.ipynb               # Created  
 │   ├── SOBOL.ipynb                                 # Created  
-│   ├── vulnerability_testing.ipynb                 # Created  
-│   ├── README.md                                     
+│   ├── vulnerability_testing.ipynb                 # Created                           
 ├── README.md    
 
-__NOTE! For elaboration about files, see README at `final assignment`__
+__NOTE! For elaboration on files, see README at `final assignment`__
 
 
 ## Installation
