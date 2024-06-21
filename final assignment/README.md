@@ -14,6 +14,7 @@ The files starting with 'funs_(...)' are technical representations of aspects of
 The following files were created for writing the report and providing Dike Rings 1 & 2 with thorough advice, in the order of the report:  
 
 [custom_problem_formulation_no_RFR.py](custom_problem_formulation_no_RFR.py)  
+-- Note! [custom_problem_formulation.py](custom_problem_formulation.py) was used initially, but then substituted by `..._no_RFR.py`, as explained in the code.
 -- Edited problem formulation designed for our own specific problem. Is being used by other notebooks.  
 ---- Don't need an inputargument, as this problem formulation has been adjusted to our problem.  
 ---- Output is the model and its planning steps.  

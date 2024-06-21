@@ -12,15 +12,13 @@ A project as part of the course EPA141A Model Based Decision Making, conducted b
 
 ## Table of Contents
 
-- [File Structure](#file-structure)
-- [Installation](#installation)
 - [Repository Structure](#repository-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Installation](#installation)  
 
-## File Structure
+## File Structure  
+This directory has the following structure:
 
+```  
 ├── final assignment/  
 │   ├── archive/                                   
 │   ├── data/                                   
@@ -44,17 +42,19 @@ A project as part of the course EPA141A Model Based Decision Making, conducted b
 │   ├── scenario_discovery_prim.ipynb               
 │   ├── SOBOL.ipynb                                 
 │   ├── vulnerability_testing.ipynb                                           
-├── README.md    
+├── README.md   
+├── requirements.txt   
+``` 
 
-__NOTE! For elaboration on files, see README at `final assignment/`__
+__NOTE! For elaboration on files, see README at `final assignment/`!__
 
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.x
-- Any other software or tools required
+- Python 3.8 or higher
+- ema-workbench 2.4.1
 
 ### Dependencies
 
