@@ -52,7 +52,7 @@ A project as part of the course EPA141A Model Based Decision Making, conducted b
 │   ├── README.md                                     
 ├── README.md    
 
-_NOTE! For elaboration about files, see README at final assignment/_
+__NOTE! For elaboration about files, see README at `final assignment`__
 
 
 ## Installation
