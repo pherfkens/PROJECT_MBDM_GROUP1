@@ -50,7 +50,9 @@ A project as part of the course EPA141A Model Based Decision Making, conducted b
 │   ├── SOBOL.ipynb                                 # Created  
 │   ├── vulnerability_testing.ipynb                 # Created  
 │   ├── README.md                                     
-├── README.md     
+├── README.md    
+
+_NOTE! For elaboration about files, see README at final assignment/_
 
 
 ## Installation
