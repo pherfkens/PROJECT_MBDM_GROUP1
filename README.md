@@ -16,7 +16,7 @@ Contributors are:
 - [Repository Structure](#repository-structure)
 - [Installation](#installation)  
 
-## File Structure  
+## Repository Structure  
 This directory has the following structure:
 
 ```  
