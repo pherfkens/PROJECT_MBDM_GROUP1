@@ -22,31 +22,31 @@ A project as part of the course EPA141A Model Based Decision Making, conducted b
 ## File Structure
 
 ├── final assignment/  
-│   ├── archive/                                    # Directory to store archives  
-│   ├── data/                                       # Directory to store data for the model  
-│   ├── images/                                     # Directory to store images for purpose of report  
-│   ├── results/                                    # Directory to store results like csv's, pickle's or tar.gz  
-│   ├── __init__.py                                 # Untouched  
-│   ├── base_case.ipynb                             # Created  
-│   ├── custom_problem_formulation_no_RfR.py        # Edited
-│   ├── custom_problem_formulation.py               # Edited
-│   ├── dike_model_function.py                      # Untouched  
-│   ├── dike_model_optimization.py                  # Untouched  
-│   ├── dike_model_simulation.py                    # Untouched  
-│   ├── directed_search.ipynb                       # Created  
-│   ├── Feature_Scoring_&_Dim_Stacking.ipynb        # Created  
-│   ├── funs_dikes.py                               # Untouched  
-│   ├── funs_generate_network.py                    # Untouched  
-│   ├── funs_hydrostat.py                           # Untouched  
-│   ├── policy_search.py                            # Created
-│   ├── README.md                                   # Edited  
-│   ├── robustness_testing.ipynb                    # Created  
-│   ├── scenario_discovery_prim.ipynb               # Created  
-│   ├── SOBOL.ipynb                                 # Created  
-│   ├── vulnerability_testing.ipynb                 # Created                           
+│   ├── archive/                                   
+│   ├── data/                                   
+│   ├── images/                                 
+│   ├── results/                                    
+│   ├── __init__.py                               
+│   ├── base_case.ipynb                            
+│   ├── custom_problem_formulation_no_RfR.py        
+│   ├── custom_problem_formulation.py              
+│   ├── dike_model_function.py                   
+│   ├── dike_model_optimization.py                
+│   ├── dike_model_simulation.py                  
+│   ├── directed_search.ipynb                     
+│   ├── Feature_Scoring_&_Dim_Stacking.ipynb      
+│   ├── funs_dikes.py                             
+│   ├── funs_generate_network.py                   
+│   ├── funs_hydrostat.py                          
+│   ├── policy_search.py                       
+│   ├── README.md                                 
+│   ├── robustness_testing.ipynb                   
+│   ├── scenario_discovery_prim.ipynb               
+│   ├── SOBOL.ipynb                                 
+│   ├── vulnerability_testing.ipynb                                           
 ├── README.md    
 
-__NOTE! For elaboration on files, see README at `final assignment`__
+__NOTE! For elaboration on files, see README at `final assignment/`__
 
 
 ## Installation

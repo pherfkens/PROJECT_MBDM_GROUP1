@@ -62,10 +62,10 @@ The following files were created for writing the report and providing Dike Rings
 ##  
 This drectory contains of couple of other directories, where data is stored.     
 
-`archive\` where the archive files are stored from [policy_search.py](policy_search.py).   
+`archive/` where the archive files are stored from [policy_search.py](policy_search.py).   
 
-`data\` where data is stored deliverd at the start of this project, so the model has the correct data.   
+`data/` where data is stored deliverd at the start of this project, so the model has the correct data.   
 
-`images\` where images are being saved, so that they can be implemented in the report delivarable.  
+`images/` where images are being saved, so that they can be implemented in the report delivarable.  
 
-`results\` where the convergence and result csv's are being stored, retrieved from [policy_search.py](policy_search.py).      
+`results/` where the convergence and result csv's are being stored, retrieved from [policy_search.py](policy_search.py).      
