@@ -59,7 +59,8 @@ The following files were created for writing the report and providing Dike Rings
 ---- The output contains of multiple PRIM plots, but most importantly the dataframe sorted on least desired values for the outcomes.    
 
 
-Also, this directory cotain a couple of other directories, where data is stored.     
+##  
+This drectory contains of couple of other directories, where data is stored.     
 
 `archive\` where the archive files are stored from [policy_search.py](policy_search.py).   
 
