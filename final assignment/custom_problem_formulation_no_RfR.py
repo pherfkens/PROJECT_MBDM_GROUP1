@@ -2,6 +2,10 @@
 Created on Wed Mar 21 17:34:11 2018
 
 @author: ciullo
+
+Edited by group 1 on 20 Jun 2024 for course EPA141A
+
+@editors: 1. Leshem, 2. Rositsa, 3. Pepijn, 4. Wouter
 """
 from ema_workbench import (
     Model,
