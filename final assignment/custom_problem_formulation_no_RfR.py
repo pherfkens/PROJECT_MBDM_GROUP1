@@ -41,7 +41,7 @@ def sum_over_time(*args):
 
 def get_model_for_problem_formulation():
     """
-    Returns the model and planning steps for the problem formulation.
+    Returns the model and planning steps for the problem formulation.  
 
     Returns:
         tuple: A tuple containing the dike model and the planning steps.
