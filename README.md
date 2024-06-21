@@ -1,6 +1,7 @@
 # Project Room for the River (Model Based Decision Making)
 
-A project as part of the course EPA141A Model Based Decision Making, conducted by group 1 (Dike Ring 1&2). Contributors are:
+A project as part of the course EPA141A Model Based Decision Making, conducted by group 1 (Dike Ring 1&2).  
+Contributors are:
 
 | Student Name | Student Number | 
 |----------|----------|
