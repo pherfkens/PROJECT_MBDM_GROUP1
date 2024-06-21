@@ -56,7 +56,7 @@ The following files were created for writing the report and providing Dike Rings
 
 [vulnerability_testing.ipynb](vulnerability_testing.ipynb)   
 -- To test the vulnerability of the remaining policies, a PRIM analysis like in the scenario discovery was done, was performed again. Thereafter, it was clear what scenario's are likely to gain trouble for our policies.  
----- As input, multiple csv's should be inputted. The csv with the remaining scenario's in the PRIM box from scenario_discovery_prim.ipynb. The csv with the final policies.   
+---- As input, multiple csv's should be inputted. The csv with the remaining scenario's in the PRIM box from [scenario_discovery_prim.ipynb](scenario_discovery_prim.ipynb). The csv with the final policies.   
 ---- The output contains of multiple PRIM plots, but most importantly the dataframe sorted on least desired values for the outcomes.    
 
 
