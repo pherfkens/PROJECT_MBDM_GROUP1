@@ -61,7 +61,7 @@ The following files were created for writing the report and providing Dike Rings
 
 
 ##  
-This drectory contains of couple of other directories, where data is stored.     
+This directory contains of couple of other directories, where data is stored.     
 
 `archive/` where the archive files are stored from [policy_search.py](policy_search.py).   
 

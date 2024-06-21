@@ -9,7 +9,7 @@ from custom_problem_formulation import get_model_for_problem_formulation
 # Function to load the selected scenarios
 def load_scenarios(filepath):
     """
-    Loads scenarios from a CSV file.
+    Loads scenarios from a CSV file. 
 
     Args:
         filepath (str): Path to the CSV file containing scenarios.

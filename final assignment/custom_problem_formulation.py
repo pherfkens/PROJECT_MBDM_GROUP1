@@ -39,26 +39,14 @@ def sum_over_time(*args):
 
 
 def get_model_for_problem_formulation():
-    """Convenience function to prepare DikeNetwork in a way it can be input in the EMA-workbench.
-    Specify uncertainties, levers, and outcomes of interest.
+    """
+    Returns the model and planning steps for the problem formulation.
 
-    Parameters
-    ----------
-    problem_formulation_id : int {0, ..., 5}
-                             problem formulations differ with respect to the objectives
-                             0: Total cost, and casualties
-                             1: Expected damages, costs, and casualties
-                             2: expected damages, dike investment costs, rfr costs, evacuation cost, and casualties
-                             3: costs and casualties disaggregated over dike rings, and room for the river and evacuation costs
-                             4: Expected damages, dike investment cost and casualties disaggregated over dike rings and room for the river and evacuation costs
-                             5: disaggregate over time and space
-
-    Notes
-    -----
-    problem formulations 4 and 5 rely on ArrayOutcomes and thus cannot straightforwardly
-    be used in optimizations
+    Returns:
+        tuple: A tuple containing the dike model and the planning steps.
 
     """
+    
     # Load the model:
     function = DikeNetwork()
     # workbench model:
